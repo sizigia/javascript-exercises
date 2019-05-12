@@ -1,14 +1,8 @@
-const repeatString = function() {
-    let i = 0;
-    let n = 3;
-    let initialString = 'hey';
-    let newString = '';
-
-    while (i < n){
-        newString += initialString;
-        ++i;
+const repeatString = function (string, num) {
+    if (num < 0) {
+        return 'ERROR';
     }
-    return newString
+    return string.repeat(num);
 }
 
 module.exports = repeatString
